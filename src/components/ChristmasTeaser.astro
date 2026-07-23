@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets';
+import teaserImage from '../assets/Christmas_Stock/gautam-krishnan-XfmXO8BMrDs-unsplash.jpg';
+---
+
+<section class="christmas-teaser theme-holiday" id="christmas-lights">
+	<Image
+		class="christmas-teaser__image"
+		src={teaserImage}
+		alt="A cozy home decorated with holiday lights and a lit picket fence"
+		width={760}
+		height={760}
+	/>
+	<div class="christmas-teaser__content">
+		<p class="section-label">— Now Booking For The Season</p>
+		<h2 class="section-heading">Christmas Lights, Done Right</h2>
+		<p class="body-text">
+			From rooflines to wreaths, we design, install, and take down your holiday
+			lighting — so you can enjoy the season without ever touching a ladder.
+		</p>
+		<a href="/christmas-lights" class="btn btn-primary christmas-teaser__cta">
+			See Christmas Lighting
+		</a>
+	</div>
+</section>
+
+<style>
+	.christmas-teaser {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xl);
+		padding: var(--space-xl) var(--content-inset);
+		background: var(--color-blush);
+	}
+
+	.christmas-teaser__image {
+		width: 100%;
+		border: 3px solid var(--color-cta);
+		border-radius: var(--radius-md);
+		object-fit: cover;
+		aspect-ratio: 354 / 220;
+	}
+
+	.christmas-teaser__content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		text-align: center;
+	}
+
+	.christmas-teaser__cta {
+		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		.christmas-teaser {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			column-gap: var(--space-xl);
+		}
+
+		.christmas-teaser__image {
+			aspect-ratio: 1 / 1;
+		}
+
+		.christmas-teaser__content {
+			text-align: left;
+		}
+
+		.christmas-teaser__cta {
+			width: auto;
+			align-self: flex-start;
+		}
+	}
+</style>

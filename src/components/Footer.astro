@@ -1,0 +1,102 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+	<a href="#quote" class="btn btn-cream">Get a Free Quote in 1 Business Day</a>
+
+	<nav class="footer-nav" aria-label="Footer navigation">
+		<a href="/">Home</a>
+		<a href="/#services">Services</a>
+		<a href="/#why-us">About</a>
+		<a href="/christmas-lights">Christmas Lights</a>
+	</nav>
+
+	<a href="/" class="footer-logo">
+		<img src="/images/logo.svg" alt="Sapphire Services" />
+	</a>
+
+	<p class="copyright">
+		© {year} Sapphire Services. All Rights Reserved.
+	</p>
+</footer>
+
+<style>
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--content-inset) var(--space-xl);
+		background: var(--color-blue);
+		text-align: center;
+	}
+
+	.btn-cream {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 331px;
+		padding: 14px 20px;
+		font-size: 0.8125rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--color-blue);
+		background: var(--color-ice);
+		border-radius: var(--radius-md);
+		transition: opacity 0.2s;
+	}
+
+	.btn-cream:hover {
+		opacity: 0.85;
+	}
+
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-lg);
+	}
+
+	.footer-nav a {
+		font-size: 0.8125rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--color-white);
+	}
+
+	.footer-logo {
+		display: inline-flex;
+		align-items: center;
+		transition: opacity 0.18s ease;
+	}
+
+	.footer-logo:hover {
+		opacity: 0.85;
+	}
+
+	.footer-logo img {
+		height: 100px;
+		width: auto;
+	}
+
+	.copyright {
+		font-size: 0.6875rem;
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--color-aqua);
+		margin: 0;
+		max-width: 280px;
+	}
+
+	@media (min-width: 768px) {
+		.footer-nav {
+			flex-direction: row;
+			gap: var(--space-lg);
+		}
+	}
+</style>

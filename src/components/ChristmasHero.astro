@@ -1,0 +1,116 @@
+---
+import { Image } from 'astro:assets';
+import christmasHeroImage from '../assets/Christmas_Stock/wonderlane-ADeF0nyAvLo-unsplash.jpg';
+---
+
+<section class="christmas-hero">
+	<div class="christmas-hero-left">
+		<div class="christmas-hero-content">
+			<h1 class="christmas-hero-heading">Holiday Lights. Zero&nbsp;Hassle.</h1>
+			<p class="christmas-hero-subtitle">
+				Custom-designed displays, commercial-grade LEDs, and full takedown &
+				storage when the season's over.
+			</p>
+		</div>
+
+		<div class="christmas-hero-actions">
+			<a href="#why-us" class="btn btn-outline christmas-btn-outline">Why Sapphire</a>
+			<a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+		</div>
+	</div>
+
+	<Image
+		class="christmas-hero-image"
+		src={christmasHeroImage}
+		alt="A snow-covered home with icicle lights and a glowing Christmas tree"
+		width={960}
+		height={960}
+		loading="eager"
+	/>
+</section>
+
+<style>
+	.christmas-hero {
+		padding: var(--space-2xl) var(--content-inset) var(--space-xl);
+		background: var(--color-blue-dark);
+	}
+
+	.christmas-hero-left {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xl);
+		margin-bottom: var(--space-2xl);
+	}
+
+	.christmas-hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		text-align: center;
+	}
+
+	.christmas-hero-heading {
+		font-family: var(--font-heading);
+		font-size: 2.5rem;
+		font-weight: 800;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: var(--color-ice);
+		margin: 0;
+	}
+
+	.christmas-hero-subtitle {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		color: var(--color-ice);
+		margin: 0;
+	}
+
+	.christmas-hero-actions {
+		display: flex;
+		gap: var(--space-md);
+	}
+
+	.christmas-hero-actions .btn {
+		flex: 1;
+		white-space: nowrap;
+	}
+
+	.christmas-btn-outline {
+		background: transparent;
+		color: var(--color-ice);
+		border-color: var(--color-ice);
+	}
+
+	.christmas-hero-image {
+		width: 100%;
+		border-radius: var(--radius-md);
+		object-fit: cover;
+		aspect-ratio: 1;
+	}
+
+	@media (min-width: 768px) {
+		.christmas-hero {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			column-gap: var(--space-xl);
+		}
+
+		.christmas-hero-left {
+			margin-bottom: 0;
+		}
+
+		.christmas-hero-heading {
+			font-size: 2.8rem;
+		}
+		.christmas-hero-content {
+			text-align: left;
+		}
+
+		.christmas-hero-image {
+			aspect-ratio: 1 / 1;
+		}
+	}
+</style>

@@ -1,0 +1,109 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/Windows_Stock/joshua-bowers-jr9wXKcwjt0-unsplash.jpg';
+---
+
+<section class="hero">
+	<div class="hero-left">
+		<div class="hero-content">
+			<h1 class="hero-heading">Streak-free windows. Every&nbsp;time.</h1>
+			<p class="hero-subtitle">
+				Priced exactly the way we quoted it — no fine print.
+			</p>
+		</div>
+
+		<div class="hero-actions">
+			<a href="#why-us" class="btn btn-outline">Why Sapphire</a>
+			<a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+		</div>
+	</div>
+
+	<Image
+		class="hero-image"
+		src={heroImage}
+		alt="Squeegeeing soap off a window to reveal a clear, streak-free view"
+		width={960}
+		height={960}
+		loading="eager"
+	/>
+</section>
+
+<style>
+	.hero {
+		padding: var(--space-2xl) var(--content-inset) var(--space-xl);
+		background: var(--color-white);
+	}
+
+	.hero-left {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xl);
+		margin-bottom: var(--space-2xl);
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		text-align: center;
+	}
+
+	.hero-heading {
+		font-family: var(--font-heading);
+		font-size: 2.5rem;
+		font-weight: 800;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: var(--color-blue);
+		margin: 0;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		color: var(--color-blue);
+		margin: 0;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: var(--space-md);
+	}
+
+	.hero-actions .btn {
+		flex: 1;
+		white-space: nowrap;
+	}
+
+	.hero-image {
+		width: 100%;
+		border-radius: var(--radius-md);
+		object-fit: cover;
+		aspect-ratio: 1;
+	}
+
+	@media (min-width: 768px) {
+		.hero {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			column-gap: var(--space-xl);
+		}
+
+		.hero-left {
+			margin-bottom: 0;
+		}
+
+		.hero-heading {
+			font-size: 2.8rem;
+		}
+		.hero-content {
+			text-align: left;
+		}
+
+		.hero-image {
+			aspect-ratio: 1 / 1;
+		}
+	}
+</style>

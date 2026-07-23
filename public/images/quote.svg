@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 478" width="354" height="478">
+	<defs>
+		<linearGradient id="quoteSky" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#1560BD" />
+			<stop offset="100%" stop-color="#0B3D75" />
+		</linearGradient>
+	</defs>
+	<rect width="354" height="478" fill="url(#quoteSky)" />
+
+	<!-- storefront silhouette -->
+	<rect x="0" y="300" width="354" height="178" fill="#0B3D75" />
+	<g fill="#6FB7DE" opacity="0.6">
+		<rect x="24" y="320" width="70" height="120" />
+		<rect x="110" y="320" width="70" height="120" />
+		<rect x="196" y="320" width="70" height="120" />
+		<rect x="282" y="320" width="48" height="120" />
+	</g>
+
+	<!-- sparkle accents -->
+	<g fill="#2FD3C6" opacity="0.9">
+		<path d="M60 80 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z" />
+		<path d="M260 60 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" />
+		<path d="M300 160 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z" />
+		<path d="M50 220 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" />
+	</g>
+</svg>

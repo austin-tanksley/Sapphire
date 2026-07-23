@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ChristmasHero from '../components/ChristmasHero.astro';
+import ChristmasWhyUs from '../components/ChristmasWhyUs.astro';
+import ChristmasServices from '../components/ChristmasServices.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+	title="Christmas Lights | Sapphire Services"
+	description="Sapphire Services Christmas light installation — custom designs, commercial-grade LEDs, and full takedown & storage when the season's over."
+>
+	<Header />
+	<main class="theme-holiday">
+		<ChristmasHero />
+		<ChristmasServices />
+		<ChristmasWhyUs />
+	</main>
+	<Footer />
+</Layout>

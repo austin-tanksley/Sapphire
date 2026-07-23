@@ -1,0 +1,196 @@
+---
+const cards = [
+	{
+		id: 'reliable',
+		icon: '/images/icons/handshake.svg',
+		title: 'Reliable & Professional',
+		body: 'We show up when we say we will — no guessing, no waiting around. You\'ll get clear communication, honest recommendations, and dependable service every time.',
+		expanded: true,
+	},
+	{
+		id: 'year-round',
+		icon: '/images/icons/calendar.svg',
+		title: 'Year-Round Sparkle',
+		body: 'Clean windows aren\'t one-and-done. Our recurring service plans keep your glass streak-free through every season — no build-up, no surprises.',
+		expanded: false,
+	},
+	{
+		id: 'residential',
+		icon: '/images/icons/building.svg',
+		title: 'Residential & Commercial Service',
+		body: 'From homes to storefronts, we provide reliable window cleaning tailored to your space. Whether it\'s your living room view or your storefront curb appeal, we\'ve got you covered.',
+		expanded: false,
+	},
+	{
+		id: 'safe',
+		icon: '/images/icons/shield.svg',
+		title: 'Safe & Fully Insured',
+		body: 'We use eco-friendly solutions and careful technique to protect your property, plants, and pets. Fully insured crews, zero worries.',
+		expanded: false,
+	},
+];
+
+const bodyText =
+	"Sapphire Services was built to bring back the kind of service people used to count on — the classic serviceman who shows up, does the job right, and stands behind his work. Whether it's a single storefront or a full estate, we treat every property with the same care and every customer's time with the same respect. No upsells, no runaround — just honest work at the price you agreed to before we started.";
+---
+
+<section class="why-us" id="why-us">
+	<div class="why-us-intro">
+		<p class="section-label">— The Sapphire Way</p>
+		<h2 class="section-heading">Why Sapphire Services?</h2>
+		<p class="body-text">{bodyText}</p>
+	</div>
+
+	<div class="cards">
+		{
+			cards.map((card) => (
+				<details class="card" open={card.expanded}>
+					<summary class="card-header">
+						<div class="card-icon-wrap">
+							<img src={card.icon} alt="" width="58" height="58" />
+							<span class="card-title">{card.title}</span>
+						</div>
+						<span class="toggle-icon" aria-hidden="true">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path
+									class="toggle-bar toggle-bar--v"
+									d="M8 3v10"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									class="toggle-bar"
+									d="M3 8h10"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</span>
+					</summary>
+					<div class="card-body">
+						<p class="body-text">{card.body}</p>
+					</div>
+				</details>
+			))
+		}
+	</div>
+
+	<a href="#quote" class="btn btn-full quote-cta">
+		Get a Free Quote in 1 Business Day
+	</a>
+</section>
+
+<style>
+	.why-us {
+		padding: var(--space-xl) var(--content-inset);
+		background: var(--color-ice);
+	}
+
+	.why-us-intro {
+		margin-bottom: var(--space-xl);
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		margin-bottom: var(--space-xl);
+	}
+
+	.card {
+		background: var(--color-white);
+		border: 3px solid var(--color-blue);
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.card-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: var(--space-lg) var(--space-md);
+		cursor: pointer;
+		list-style: none;
+		font-weight: 900;
+	}
+
+	.card-header::-webkit-details-marker {
+		display: none;
+	}
+
+	.card-icon-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-sm);
+		width: 100%;
+	}
+
+	.card-title {
+		font-size: 1rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.toggle-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		margin-top: var(--space-sm);
+		border-radius: 50%;
+		background: var(--color-accent);
+		color: var(--color-white);
+	}
+
+	.toggle-bar--v {
+		transform-origin: center;
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+
+	.card[open] .toggle-bar--v {
+		opacity: 0;
+		transform: rotate(90deg);
+	}
+
+	.card-body {
+		padding: 0 var(--space-lg) var(--space-lg);
+	}
+
+	.card-body .body-text {
+		font-size: 1.3125rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.quote-cta {
+		font-family: var(--font-heading);
+		font-size: 1.4875rem;
+		line-height: 1.3;
+		text-align: center;
+		padding: 18px 20px;
+		border-radius: var(--radius-md);
+		border: 3px solid var(--color-cta);
+		background: var(--color-white);
+		color: var(--color-cta);
+	}
+
+	@media (min-width: 768px) {
+		.cards {
+			/* Keep all cards the same width across breakpoints */
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			gap: var(--space-md);
+		}
+
+		.card-body .body-text {
+			text-align: center;
+		}
+	}
+</style>

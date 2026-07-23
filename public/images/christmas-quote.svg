@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 478" width="354" height="478">
+	<defs>
+		<linearGradient id="quoteNight" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#031F3F" />
+			<stop offset="100%" stop-color="#0B3D75" />
+		</linearGradient>
+	</defs>
+	<rect width="354" height="478" fill="url(#quoteNight)" />
+
+	<g fill="#EAF6FB" opacity="0.85">
+		<circle cx="50" cy="50" r="1.6" />
+		<circle cx="120" cy="30" r="1.2" />
+		<circle cx="280" cy="60" r="1.6" />
+		<circle cx="320" cy="120" r="1.2" />
+		<circle cx="40" cy="150" r="1.6" />
+	</g>
+
+	<!-- rooftop with string lights across the width -->
+	<path d="M0 260 L177 170 L354 260 V478 H0 Z" fill="#0A2E57" />
+	<path d="M10 258 Q177 210 344 258" fill="none" stroke="#F2F2F2" stroke-width="1.5" stroke-dasharray="1 6" />
+	<g>
+		<circle cx="40" cy="248" r="5" fill="#D63447" />
+		<circle cx="90" cy="228" r="5" fill="#2F8F46" />
+		<circle cx="140" cy="212" r="5" fill="#F2B614" />
+		<circle cx="177" cy="206" r="5" fill="#2FD3C6" />
+		<circle cx="214" cy="212" r="5" fill="#D63447" />
+		<circle cx="264" cy="228" r="5" fill="#2F8F46" />
+		<circle cx="314" cy="248" r="5" fill="#F2B614" />
+	</g>
+
+	<!-- windows -->
+	<g fill="#6FB7DE" opacity="0.5">
+		<rect x="60" y="300" width="40" height="40" />
+		<rect x="150" y="300" width="40" height="40" />
+		<rect x="254" y="300" width="40" height="40" />
+	</g>
+</svg>

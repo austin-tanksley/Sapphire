@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 220" width="354" height="220">
+	<defs>
+		<linearGradient id="teaserNight" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#0B3D75" />
+			<stop offset="100%" stop-color="#031F3F" />
+		</linearGradient>
+	</defs>
+	<rect width="354" height="220" fill="url(#teaserNight)" />
+
+	<g fill="#EAF6FB" opacity="0.85">
+		<circle cx="30" cy="30" r="1.6" />
+		<circle cx="320" cy="24" r="1.2" />
+		<circle cx="280" cy="50" r="1.6" />
+		<circle cx="70" cy="55" r="1.2" />
+	</g>
+
+	<path d="M50 140 L177 70 L304 140 V210 H50 Z" fill="#0A2E57" />
+	<path d="M54 138 Q177 100 300 138" fill="none" stroke="#F2F2F2" stroke-width="1.5" stroke-dasharray="1 6" />
+	<g>
+		<circle cx="70" cy="132" r="4" fill="#D63447" />
+		<circle cx="105" cy="118" r="4" fill="#2F8F46" />
+		<circle cx="140" cy="108" r="4" fill="#F2B614" />
+		<circle cx="177" cy="104" r="4" fill="#2FD3C6" />
+		<circle cx="214" cy="108" r="4" fill="#D63447" />
+		<circle cx="249" cy="118" r="4" fill="#2F8F46" />
+		<circle cx="284" cy="132" r="4" fill="#F2B614" />
+	</g>
+	<rect x="150" y="170" width="54" height="40" fill="#031F3F" />
+	<circle cx="177" cy="182" r="9" fill="none" stroke="#2F8F46" stroke-width="4" />
+</svg>

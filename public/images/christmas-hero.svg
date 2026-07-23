@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 354" width="354" height="354">
+	<defs>
+		<linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#0B3D75" />
+			<stop offset="100%" stop-color="#031F3F" />
+		</linearGradient>
+	</defs>
+	<rect width="354" height="354" fill="url(#nightSky)" />
+
+	<!-- stars -->
+	<g fill="#EAF6FB" opacity="0.85">
+		<circle cx="40" cy="40" r="1.6" />
+		<circle cx="90" cy="24" r="1.2" />
+		<circle cx="140" cy="50" r="1.6" />
+		<circle cx="300" cy="36" r="1.6" />
+		<circle cx="260" cy="70" r="1.2" />
+		<circle cx="320" cy="100" r="1.6" />
+	</g>
+
+	<!-- house silhouette -->
+	<path d="M60 200 L177 110 L294 200 V300 H60 Z" fill="#0A2E57" />
+	<rect x="150" y="230" width="54" height="70" fill="#031F3F" />
+	<rect x="90" y="220" width="30" height="30" fill="#6FB7DE" opacity="0.5" />
+	<rect x="234" y="220" width="30" height="30" fill="#6FB7DE" opacity="0.5" />
+
+	<!-- roofline string lights -->
+	<path d="M64 202 Q177 150 292 202" fill="none" stroke="#F2F2F2" stroke-width="1.5" stroke-dasharray="1 6" />
+	<g>
+		<circle cx="80" cy="196" r="4" fill="#D63447" />
+		<circle cx="110" cy="182" r="4" fill="#2F8F46" />
+		<circle cx="140" cy="172" r="4" fill="#F2B614" />
+		<circle cx="177" cy="168" r="4" fill="#2FD3C6" />
+		<circle cx="214" cy="172" r="4" fill="#D63447" />
+		<circle cx="244" cy="182" r="4" fill="#2F8F46" />
+		<circle cx="274" cy="196" r="4" fill="#F2B614" />
+	</g>
+
+	<!-- wreath on door -->
+	<circle cx="177" cy="255" r="12" fill="none" stroke="#2F8F46" stroke-width="5" />
+	<path d="M177 267 L172 276 L177 273 L182 276 Z" fill="#D63447" />
+
+	<!-- snow -->
+	<g fill="#EAF6FB" opacity="0.9">
+		<circle cx="30" cy="300" r="3" />
+		<circle cx="70" cy="320" r="2.5" />
+		<circle cx="120" cy="310" r="3" />
+		<circle cx="250" cy="315" r="2.5" />
+		<circle cx="300" cy="300" r="3" />
+	</g>
+	<rect x="0" y="320" width="354" height="34" fill="#EAF6FB" />
+</svg>
