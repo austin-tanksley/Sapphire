@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import christmasHeroImage from '../assets/Christmas_Stock/wonderlane-ADeF0nyAvLo-unsplash.jpg';
 ---
 
 <section class="christmas-hero">
@@ -19,12 +17,12 @@ import christmasHeroImage from '../assets/Christmas_Stock/wonderlane-ADeF0nyAvLo
 		</div>
 	</div>
 
-	<Image
+	<img
 		class="christmas-hero-image"
-		src={christmasHeroImage}
-		alt="A snow-covered home with icicle lights and a glowing Christmas tree"
-		width={960}
-		height={960}
+		src="/images/Home.png"
+		alt="A home decorated with holiday lights"
+		width="1448"
+		height="1086"
 		loading="eager"
 	/>
 </section>
